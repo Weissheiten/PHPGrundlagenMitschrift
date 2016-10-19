@@ -8,13 +8,24 @@
 
 namespace PHPGrundlagen\HelperClasses;
 
-class Shape
+abstract class Shape
 {
+    /* @var string $shapeName */
+    protected $shapeName;
+
     /* @var int $side_lenght */
     protected $side_length;
 
     /* @var string $color */
     protected $color;
+
+    /**
+     * @return mixed
+     */
+    public function getShapeName()
+    {
+        return $this->shapeName;
+    }
 
     /**
      * @return string color as hexcode
@@ -29,9 +40,24 @@ class Shape
      * @param int $side_length
      * @param string $color
      */
-    public function __construct(int $side_length, string $color)
+    public function __construct(int $side_length, string $color, string $shapename)
     {
+        $this->shapeName = $shapename;
         $this->side_length = $side_length;
         $this->color = $color;
     }
+
+    /**
+     * @return string perimeter and color of the form
+     */
+    public function outputInfo() : string
+    {
+        return sprintf(
+            "Es gibt ein %s mit Umfang %d cm und der Farbe %s\n",
+            $this->getShapeName(),
+            $this->calculatePerimeter(),
+            $this->getColor()
+        );
+    }
+
 }

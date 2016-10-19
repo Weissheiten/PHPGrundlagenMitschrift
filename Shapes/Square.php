@@ -17,6 +17,13 @@ use \PHPGrundlagen\HelperClasses\Shape as Shape;
  */
 class Square extends Shape
 {
+    protected $shapeName = "Square";
+
+    public function __construct(int $side_length, string $color)
+    {
+        parent::__construct($side_length, $color, $this->shapeName);
+    }
+
     /**
      * @return float perimeter
      */

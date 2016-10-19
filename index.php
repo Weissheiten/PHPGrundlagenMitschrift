@@ -7,6 +7,7 @@
  */
 namespace PHPGrundlagen\GeometricForms;
 
+
 include_once('HelperClasses/Shape.php');
 include_once('Shapes/Square.php');
 include_once('Shapes/Triangle.php');
@@ -26,11 +27,7 @@ $triangles = array(
 foreach($triangles as $triangle)
 {
     /* @var Shapes\Triangle $triangle */
-    echo sprintf(
-        "Es gibt ein Dreieck mit Umfang %d cm und der Farbe %s\n",
-        $triangle->calculatePerimeter(),
-        $triangle->getColor()
-    );
+    $triangle->outputInfo();
 }
 
 $squares = array(
@@ -40,9 +37,5 @@ $squares = array(
 
 foreach ($squares as $square) {
     /* @var Shapes\Square $square */
-    echo sprintf(
-        "Es gibt ein Quadrat mit Umfang %d cm und der Farbe %s\n",
-        $square->calculatePerimeter(),
-        $square->getColor()
-    );
+   $square->outputInfo();
 }

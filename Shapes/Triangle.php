@@ -17,11 +17,18 @@ use \PHPGrundlagen\HelperClasses\Shape as Shape;
  */
 class Triangle extends Shape
 {
+    protected $shapeName = "Triangle";
+
+    public function __construct(int $side_length, string $color)
+    {
+        parent::__construct($side_length, $color, $this->shapeName);
+    }
+
     /**
      * @return float perimeter
      */
     public function calculatePerimeter() : float
     {
-        return 4*$this->side_length;
+        return 3*$this->side_length;
     }
 }
