@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: FloLeBlanc
- * Date: 19.10.2016
- * Time: 16:09
- */
 
 namespace PHPGrundlagen\Shapes;
 
+use \PHPGrundlagen\Interfaces\GeometricInterface as GeometricInterface;
 use \PHPGrundlagen\HelperClasses\Shape as Shape;
 
 /**
@@ -15,7 +10,7 @@ use \PHPGrundlagen\HelperClasses\Shape as Shape;
  *
  * represents a square
  */
-class Square extends Shape
+class Square extends Shape implements GeometricInterface
 {
     protected $shapeName = "Square";
 

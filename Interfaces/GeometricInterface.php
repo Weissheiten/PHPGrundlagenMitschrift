@@ -1,6 +1,6 @@
 <?php
 
-namespace Interfaces;
+namespace PHPGrundlagen\Interfaces;
 
 /**
  * Interface GeometricInterface
@@ -18,5 +18,5 @@ interface GeometricInterface
     /**
      * @return double perimeter
      */
-    public function calcPerimeter();
+    public function calculatePerimeter();
 }

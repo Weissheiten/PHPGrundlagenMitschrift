@@ -8,6 +8,7 @@
 
 namespace PHPGrundlagen\Shapes;
 
+use \PHPGrundlagen\Interfaces\GeometricInterface as GeometricInterface;
 use \PHPGrundlagen\HelperClasses\Shape as Shape;
 
 /**
@@ -15,7 +16,7 @@ use \PHPGrundlagen\HelperClasses\Shape as Shape;
  *
  * represents a triangle
  */
-class Triangle extends Shape
+class Triangle extends Shape implements GeometricInterface
 {
     protected $shapeName = "Triangle";
 
