@@ -1,6 +1,6 @@
 <?php
 
-namespace Abstracts;
+namespace HTL3R\GeoShapes\Abstracts;
 
 /**
  * Class GeometricShape

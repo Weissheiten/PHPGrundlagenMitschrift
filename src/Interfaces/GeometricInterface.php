@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPGrundlagen\Interfaces;
+namespace HTL3R\GeoShapes\Interfaces;
 
 /**
  * Interface GeometricInterface

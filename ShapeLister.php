@@ -2,14 +2,14 @@
 
 namespace Lister;
 
-require_once('Interfaces/GeometricInterface.php');
-require_once('HelperClasses/Shape.php');
-require_once('Shapes/Square.php');
-require_once('Shapes/Triangle.php');
+require_once('src/Interfaces/GeometricInterface.php');
+require_once('src/HelperClasses/Shape.php');
+require_once('src/Shapes/Square.php');
+require_once('src/Shapes/Triangle.php');
 
-use \PHPGrundlagen\Interfaces\GeometricInterface as GeometricInterface;
-use \PHPGrundlagen\Shapes\Square as Square;
-use \PHPGrundlagen\Shapes\Triangle as Triangle;
+use \HTL3R\GeoShapes\Interfaces\GeometricInterface as GeometricInterface;
+use \HTL3R\GeoShapes\Shapes\Square as Square;
+use \HTL3R\GeoShapes\Shapes\Triangle as Triangle;
 
 class ShapeLister
 {
@@ -23,7 +23,7 @@ class ShapeLister
         );
 
         foreach ($geoForms as $geoForm) {
-            /* @var $geoForm \Interfaces\GeometricInterface; */
+            /* @var $geoForm GeometricInterface; */
             echo $geoForm->calculatePerimeter()." | ";
         }
     }

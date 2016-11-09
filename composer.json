@@ -1,0 +1,19 @@
+{
+    "name": "htl3r/geoshapes",
+    "description": "Demo package without practical use",
+    "type": "library",
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": { "HTL3R\\GeoShapes\\": "src/" }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Weiss",
+            "email": "github@weissheiten.at"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -1,9 +1,9 @@
 <?php
 
-namespace PHPGrundlagen\Shapes;
+namespace HTL3R\GeoShapes\Shapes;
 
-use \PHPGrundlagen\Interfaces\GeometricInterface as GeometricInterface;
-use \PHPGrundlagen\HelperClasses\Shape as Shape;
+use \HTL3R\GeoShapes\Interfaces\GeometricInterface as GeometricInterface;
+use \HTL3R\GeoShapes\HelperClasses\Shape as Shape;
 
 /**
  * Class Square

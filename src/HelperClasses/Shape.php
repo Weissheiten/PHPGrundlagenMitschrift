@@ -6,7 +6,7 @@
  * Time: 15:58
  */
 
-namespace PHPGrundlagen\HelperClasses;
+namespace HTL3R\GeoShapes\HelperClasses;
 
 abstract class Shape
 {
